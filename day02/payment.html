@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        thead {
+            background-color: aqua;
+        }
+        tbody {
+            background-color: azure;
+        }
+        tfoot {
+            background-color: navy;
+            color: white;
+        }
+        #login {
+            background-color: blanchedalmond;
+        }
+        #info {
+            background-color: greenyellow;
+        }
+        #paragrah {
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Amount</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Pizza</td>
+                <td>1</td>
+                <td>$250</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td rowspan="2">Chicken</td>
+                <td>5</td>
+                <td>$99</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>10</td>
+                <td>$169</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Frenchfried</td>
+                <td>1</td>
+                <td>$159</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Spagetti</td>
+                <td>1</td>
+                <td>$259</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">sum</td>
+                <td>$936</td>
+            </tr>
+        </tfoot>
+    </table>
+    <div id="login">
+        <label for="username">Username</label>
+        <label for="password">Password</label>
+    </div>
+    <div id="info">
+        <label for="username">Address</label>
+        <label for="password">Bio</label>
+    </div>
+    <p><span id="paragrah">This is paragrah</span>, this is my name</p>
+    
+    <option value="say&quot;D&quot;">Say "D"</option>
+    <p>
+        &lt;p&gt;
+    </p>
+    <p>Hello &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;World</p>
+</body>
+</html>
