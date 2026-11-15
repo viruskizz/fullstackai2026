@@ -16,19 +16,22 @@
 -->
 <body style="margin: 0; background-color: #fbfff1; color: #3c3744;">
     <header>
-        <nav style="margin: 10px 20px;">
-            <!--     
-            This is root path nav bar
-            use / is prefix
-            -->
-            <a href="/day01/story.html">Home</a> |
-            <a href="/day01/pages/about.html">About</a> |
-            <a href="/day01/pages/contract.html">Contract</a>
+        <nav style="padding: 10px 20px; height: 20px; position: sticky; top: 0; background-color: rgba(255, 255, 255, 0.5); z-index: 999;">
+            <div style="float: left;">
+                <img width="20px" src="./images/ff3-icon.png" alt="logo">
+                <h4 style="display: inline;">Final Fantasy</h4>
+            </div>
+            <div style="float: right;">
+                <a href="/day01/story.html">Home</a> |
+                <a href="/day01/pages/about.html">About</a> |
+                <a href="/day01/pages/contract.html">Contract</a>
+            </div>
         </nav>
-        <div id="cover">
+        <div id="cover" style="position: relative;">
             <a target="_blank" href="https://finalfantasy.fandom.com/wiki/Final_Fantasy_VIII_characters">
                 <img style="width: 100%; border: 1px solid #3c3744;" src="./images/ffv8-wallpaper.png" alt="ff8">
             </a>
+            <a href="" style="position: absolute; bottom: 10px; left: 10px">Site</a>
         </div>
     </header>
     <main style="margin: 0px 5%;">

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        /* default */
+        h1, h2 {
+            color: red;
+            background-color: yellow;
+        }
+        /* control style */
+        #oneone {
+            color: navy
+        }
+        .heading {
+            color: forestgreen;
+            font-style: italic;
+        }
+        .modern {
+            font-family: monospace;
+            text-decoration: underline;
+        }
+        .modern .description {
+            font-size: 0.8em;
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <h1 id="oneone">Heading 1.1</h1>
+    <h1 class="heading">Heading 1.2</h1>
+    <h1 class="heading">Heading 1.3</h1>
+    <h2 class="heading">Heading 2</h2>
+    <h2 class="heading modern">Heading 2.2</h2>
+    <div class="modern">
+        <h3>Detail</h3>
+        <p class="description">this is helloo</p>
+        <p class="description">bye bye</p>
+        <p style="color: purple;" class="description">sleep sleep</p>
+    </div>
+    <p class="description">footer</p>
+</body>
+</html>
