@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            width: 200px;
+            height: 300px;
+            border: 1px solid black;
+        }
+
+        .card img {
+            width: 100%;
+            height: 30%;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 5px 10px;
+            height: 70%;
+        }
+
+        .card .card-body p {
+            height: 80px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: wrap;
+            /* use webkit to cut text multiline */
+            display: -webkit-box;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+        }
+
+        .card button {
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="./images/characters/Ff8-rinoa.webp" alt="">
+        <div class="card-body">
+            <h3>Title</h3>
+            <p>Description Description Description Description Description Description Description
+                DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription
+            </p>
+            <button class="card-action">Action</button>
+        </div>
+    </div>
+</body>
+
+</html>

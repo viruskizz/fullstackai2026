@@ -6,39 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/ff3-icon.png" type="images/x-icon">
     <title>Final Fantasy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
-<!--
-    background: #fbfff1
-    primary #3066be
-    accent #090c9b
-    text: # 3c3744
-    text2: #b4c5e4
--->
-<body style="margin: 0; background-color: #fbfff1; color: #3c3744;">
+
+<body>
     <header>
-        <nav style="padding: 10px 20px; height: 20px; position: sticky; top: 0; background-color: rgba(255, 255, 255, 0.5); z-index: 999;">
+        <nav>
             <div style="float: left;">
-                <img width="20px" src="./images/ff3-icon.png" alt="logo">
+                <img class="nav-logo" src="./images/ff3-icon.png" alt="logo">
                 <h4 style="display: inline;">Final Fantasy</h4>
             </div>
             <div style="float: right;">
-                <a href="/day01/story.html">Home</a> |
-                <a href="/day01/pages/about.html">About</a> |
-                <a href="/day01/pages/contract.html">Contract</a>
+                <a class="nav-link" href="/day01/story.html">Home</a> |
+                <a class="nav-link" href="/day01/pages/about.html">About</a> |
+                <a class="nav-link" href="/day01/pages/contract.html">Contract</a>
             </div>
         </nav>
         <div id="cover" style="position: relative;">
-            <a target="_blank" href="https://finalfantasy.fandom.com/wiki/Final_Fantasy_VIII_characters">
-                <img style="width: 100%; border: 1px solid #3c3744;" src="./images/ffv8-wallpaper.png" alt="ff8">
-            </a>
-            <a href="" style="position: absolute; bottom: 10px; left: 10px">Site</a>
+            <img class="img-cover" src="./images/ffv8-wallpaper.png" alt="ff8">
+            <a class="link-cover" href="https://finalfantasy.fandom.com/wiki/Final_Fantasy_VIII_characters">Site</a>
         </div>
     </header>
-    <main style="margin: 0px 5%;">
+    <main>
         <section id="intro">
-            <h1 style="color: #3066be;">Final Fantasy VIII</h1>
-            <p style="padding: 0px 10px;">
-                <strong style="color: #090c9b;">Final Fantasy VIII</strong> is the eighth main installment in the Final Fantasy series,
+            <h1>Final Fantasy VIII</h1>
+            <p>
+                <strong>Final Fantasy VIII</strong> is the eighth main installment in the Final Fantasy series,
                 developed and published by Square. It was released in <em>February 1999</em> for the PlayStation,
                 and has since been re-released on Microsoft Windows in 2000 in a CD format,
                 with this version being ported to Steam in 2013. A remastered version,
@@ -49,34 +47,78 @@
                 March 25, 2021 for iOS and iPadOS as well as Android.
             </p>
         </section>
+        <hr>
         <section id="characters">
-            <h2 style="color: #3066be;">
+            <h2>
                 <a href="https://finalfantasy.fandom.com/wiki/Final_Fantasy_VIII" target="_blank">
                     Characters
                 </a>
             </h2>
-            <ul >
+            <ul>
                 <li>
-                    <a style="color: #090c9b" href="./characters/squall.html">
+                    <a href="./characters/squall.html">
                         Squall Leonhart
                     </a>
                 </li>
                 <li>
-                    <a style="color: #090c9b" href="./characters/rinoa.html">
+                    <a href="./characters/rinoa.html">
                         Rinoa Heartilly
                     </a>
                 </li>
                 <li>
-                    <a style="color: #090c9b" href="./characters/zell.html">
+                    <a href="./characters/zell.html">
                         Zell Dincht
                     </a>
                 </li>
             </ul>
+            <hr>
+            <div>
+                <div class="card">
+                    <img style="object-position: 0 -50px;" src="./images/characters/Ff8-rinoa.webp" alt="rinao">
+                    <div class="card-body">
+                        <h3>Title</h3>
+                        <p>Description Description Description Description Description Description Description
+                            DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription
+                        </p>
+                        <button class="card-action">Action</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img style="object-position: 0 -30px;" src="./images/characters/Ff8-squall.webp" alt="">
+                    <div class="card-body">
+                        <h3>Title</h3>
+                        <p>Description Description Description Description Description Description Description
+                            DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription
+                        </p>
+                        <button class="card-action">Action</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/characters/Ff8-selphie.webp" alt="">
+                    <div class="card-body">
+                        <h3>Title</h3>
+                        <p>Description Description Description Description Description Description Description
+                            DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription
+                        </p>
+                        <button class="card-action">Action</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/characters/Ff8-zell.webp" alt="">
+                    <div class="card-body">
+                        <h3>Title</h3>
+                        <p>Description Description Description Description Description Description Description
+                            DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription
+                        </p>
+                        <button class="card-action">Action</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <hr style="margin: 20px 10px;">
-    <footer style="margin: 0px 5%;">
-        <h3 style="color: #3066be;">Contract Us</h3>
+    <footer>
+        <hr>
+        <h3>Contract Us</h3>
         <div>
             <label for="name">Name</label><br>
             <input type="text" name="name" id="name">
@@ -91,4 +133,5 @@
         </div>
     </footer>
 </body>
+
 </html>
